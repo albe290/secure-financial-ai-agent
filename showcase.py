@@ -25,6 +25,9 @@ def run_showcase():
     print_header("SECURE FINANCIAL AI AGENT - GUARDRails SHOWCASE")
 
     print(f"{YELLOW}[System] Starting up Financial AI Agent Orchestrator...{RESET}")
+    print(
+        f"{YELLOW}[Policy] Loading decentralized governance rules from config/policy.yaml...{RESET}"
+    )
     time.sleep(1)
 
     # ---------------------------------------------------------
