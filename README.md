@@ -81,15 +81,22 @@ Check out the full walkthrough of the Amex Agent in action:
 
 To see the agent in action via text logs, we have also provided a [Detailed Showcase](SHOWCASE.md). Below are the "Money Shots" of our safe automation system:
 
-### 1. The Autonomous Orchestrator (Live Demo)
-This screenshot shows the agent processing a fraud triage request, retrieving policy context via RAG, and generating a reasoning plan before execution.
-![Live Demo Placeholder](assets/demo_execution.png)
+### 1. The Autonomous Orchestrator (Authorized Action)
+![Scenario 1: Authorized Freeze](assets/scenario_1.png)
 
-### 2. 100% Safety Compliance (Unit Tests)
-Validating the "Trust but Verify" model. This shows our 10+ core safety and compliance tests passing, ensuring every edge case is governed.
-![Testing Placeholder](assets/safety_tests.png)
+### 2. Guardrails in Action (Unauthorized Attempt Blocked)
+Deterministic validators intercept unauthorized actions before they reach the core logic.
+![Scenario 2: VIP Protection](assets/scenario_2.png)
 
-### 3. Policy Intelligence (RAG Ingestion)
+### 3. Risk Intelligence (Automated Escalation)
+The Sentinel Risk Engine detects threshold violations and triggers human review.
+![Scenario 3: Risk Escalation](assets/scenario_3.png)
+
+### 4. 100% Safety Compliance (Verification Suite)
+Validating the "Trust but Verify" model with our automated test suite.
+![Safety Test Results](assets/safety_tests_2.png)
+
+### 5. Policy Intelligence (RAG Ingestion)
 Demonstrating how the agent "learns" Amex policies by ingesting markdown documents into a high-speed vector store.
 ![RAG Ingestion Placeholder](assets/rag_ingestion.png)
 
@@ -128,7 +135,7 @@ To run a specific test suite (e.g., concrete execution and sentinel integration)
 pytest tests/test_concrete_execution.py -v
 ```
 
-![Safety Test Results](assets/safety_tests.png)
+![Safety Test Results](assets/safety_tests_2.png)
 
 ---
 
