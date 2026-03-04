@@ -48,8 +48,5 @@ The system retrieves 100% accurate policy context by embedding internal Amex gui
 
 ---
 
-### Policy Intelligence Layer (RAG)
-![RAG Policy Ingestion](assets/rag_ingestion.png)
-
 ### Verification Suite: 100% Safety Compliance
 ![Safety Test Suite](assets/safety_tests.png)

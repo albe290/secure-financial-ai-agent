@@ -128,6 +128,8 @@ To run a specific test suite (e.g., concrete execution and sentinel integration)
 pytest tests/test_concrete_execution.py -v
 ```
 
+![Safety Test Results](assets/safety_tests.png)
+
 ---
 
 ## 🛡️ Security & Compliance First
