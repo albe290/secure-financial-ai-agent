@@ -32,6 +32,8 @@ This AI agent mitigates these problems by bringing the cost-per-decision down to
 
 ## 🏗️ Architecture & Core Components
 
+![Secure Financial AI Agent Architecture](assets/architecture_premium.png)
+
 ```mermaid
 graph TD
     User([Customer or Employee]) --> API[FastAPI Entry Point]
@@ -57,6 +59,19 @@ graph TD
     Decision -- ALLOW --> Workflow[Concrete Workflow Execution]
     Decision -- BLOCK --> Fail[Audit Log / Fail]
     Decision -- REVIEW --> Escalation[Human Review Ticket]
+
+    %% Styling
+    classDef orchestrator fill:#00d2ff,stroke:#333,stroke-width:4px,color:#fff,font-weight:bold;
+    classDef safety fill:#ff4b2b,stroke:#333,stroke-width:2px,color:#fff;
+    classDef intelligence fill:#4facfe,stroke:#333,stroke-width:2px,color:#fff;
+    classDef risk fill:#f9d423,stroke:#333,stroke-width:2px,color:#000;
+    classDef execute fill:#00b09b,stroke:#333,stroke-width:2px,color:#fff;
+    
+    class Orchestrator orchestrator;
+    class Schema,Financial,Compliance safety;
+    class Retriever,Planner,VectorDB intelligence;
+    class Sentinel,Decision,Escalation risk;
+    class Workflow execute;
 ```
 
 1. **Stateful Workflows (`workflows/`)**: Deterministic state machines (e.g., `FraudTriageWorkflow`) that guide the LLM through a strict sequence: Intent Validation -> Context Retrieval -> Risk Evaluation -> Execution.
