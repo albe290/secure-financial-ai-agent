@@ -5,7 +5,7 @@ from api.employee_routes import router as employee_router
 from monitoring.metrics import metrics
 
 app = FastAPI(
-    title="Amex Agent Business Automation API",
+    title="Secure Financial AI Agent API",
     description="A secure, policy-driven AI runtime for processing financial workflows.",
     version="1.0.0",
 )
@@ -21,7 +21,10 @@ app.include_router(
 
 @app.get("/health")
 async def health_check():
-    return {"status": "ok", "message": "Amex Agent Automation Runtime is healthy."}
+    return {
+        "status": "ok",
+        "message": "Secure Financial Agent Automation Runtime is healthy.",
+    }
 
 
 @app.get("/metrics")

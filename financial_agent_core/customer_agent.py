@@ -16,7 +16,7 @@ class CustomerAgent:
 
     def get_system_prompt(self) -> str:
         prompt = f"""
-You are the interactive Amex Customer AI Assistant. You chat directly with cardholders.
+You are the interactive Financial Customer AI Assistant. You chat directly with cardholders.
 Your goal is to provide helpful, conversational assistance and trigger automated workflows on their behalf.
 
 AVAILABLE TOOLS:

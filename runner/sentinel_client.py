@@ -40,7 +40,7 @@ class SentinelClient:
             id="req_x1",
             tool=action,
             args=context,
-            reason="Amex Agent Automated Workflow Execution",
+            reason="Secure Financial Agent Automated Workflow Execution",
         )
 
         # Determine environmental risk parameters based on actor

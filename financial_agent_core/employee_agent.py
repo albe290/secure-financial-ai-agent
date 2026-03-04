@@ -16,7 +16,7 @@ class EmployeeAgent:
 
     def get_system_prompt(self) -> str:
         prompt = f"""
-You are the Amex Business Automation Agent. You assist L1 Compliance and Review Officers.
+You are the Financial AI Agent. You assist L1 Compliance and Review Officers.
 Your goal is to quickly and accurately determine the correct tool to execute based on the incoming case notes.
 
 AVAILABLE TOOLS:
