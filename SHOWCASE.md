@@ -109,28 +109,28 @@ The platform processes every request through a deterministic control plane befor
 ### Executive Overview
 Real-time KPI cards — automation rate, review rate, risk captured, avg latency — with platform throughput trends and strategy distribution.
 
-![Executive Overview](docs/screenshots/01_executive_overview.png)
+![Executive Overview](assets/01_executive_overview.png)
 
 ---
 
 ### Governance & Risk
 Live policy enforcement feed showing every rule triggered across the platform, with the risk profile matrix and strictness level.
 
-![Governance & Risk](docs/screenshots/02_governance_risk.png)
+![Governance & Risk](assets/02_governance_risk.png)
 
 ---
 
 ### Review Queue
 Active human review cases with age, reason, domain, and owner tracking. Includes override history and queue health metrics (MTTR, queue depth).
 
-![Review Queue](docs/screenshots/03_review_queue.png)
+![Review Queue](assets/03_review_queue.png)
 
 ---
 
 ### Evaluation & Scorecards
 Platform quality benchmarks — Governance: **STRONG**, Routing: **STRONG** — with automation precision (96.4%), routing success (100%), and diagnostic insights.
 
-![Evaluation & Scorecards](docs/screenshots/04_evaluation_scorecards.png)
+![Evaluation & Scorecards](assets/04_evaluation_scorecards.png)
 
 ---
 
@@ -175,15 +175,6 @@ Failure Tests:      12 passed  (Malformed Input, Policy Violations, Missing Cont
 **Key finding:** The failure test suite caught a real governance gap — the risk engine was auto-approving requests with empty customer context. Fixed in-place during Phase 7.
 
 ---
-
----
-
-## 📚 Educational Integration: The BlueShield Book
-
-This project is now fully documented for educational purposes. Every core file can be explored through our **15-Chapter Documentation Series** located in the `docs/` folder.
-
-- **Start here**: **[Book Table of Contents](docs/book_toc.md)**
-- **Deep Dive**: **[Core Engine Study Guide](CORE_ENGINE_STUDY_GUIDE.md)** — Learn how to speak about this project in technical interviews.
 
 ---
 

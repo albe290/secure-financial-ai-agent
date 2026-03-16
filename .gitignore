@@ -1,53 +1,17 @@
-# Python
+# Ignore everything
+/*
+
+# Whitelist essential public files
+!README.md
+!SHOWCASE.md
+!assets/
+!.gitignore
+
+# Standard Ignore Patterns
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-
-# Virtual environments
 venv/
-env/
-ENV/
-env.bak/
-venv.bak/
-
-# Logs and test outputs
-*.log
-test_out*.txt
-test_db_out*.txt
-
-# Pytest
 .pytest_cache/
-.coverage
-htmlcov/
-
-# Editor configuration
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Source Code & Data (Hiding from GitHub)
-/api/
-/config/
-/financial_agent_core/
-/monitoring/
-/rag/
-/runner/
-/tests/
-/tools/
-/validators/
-/workflows/
-/venv/
-/__pycache__/
-/.pytest_cache/
-/showcase.py
-/run_dev.py
-/test_*.txt
-/*.log
-/*.json
-/sentinel-runtime/
-
-# OS files
+*.log
 .DS_Store
 Thumbs.db

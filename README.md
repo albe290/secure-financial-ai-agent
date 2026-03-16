@@ -108,11 +108,9 @@ This separation allows the platform to balance safe autonomy, explainability, sc
 
 | Executive Overview | Governance & Risk |
 |---|---|
-| ![Executive Overview](docs/screenshots/01_executive_overview.png) | ![Governance & Risk](docs/screenshots/02_governance_risk.png) |
-
-| Review Queue | Evaluation & Scorecards |
+| ![Executive Overview](assets/01_executive_overview.png) | ![Governance & Risk](assets/02_governance_risk.png) |
 |---|---|
-| ![Review Queue](docs/screenshots/03_review_queue.png) | ![Evaluation Scorecards](docs/screenshots/04_evaluation_scorecards.png) |
+| ![Review Queue](assets/03_review_queue.png) | ![Evaluation Scorecards](assets/04_evaluation_scorecards.png) |
 
 ---
 
@@ -220,24 +218,22 @@ amex-agent-business-automation/
 
 ---
 
-## 📚 Educational Resources: The BlueShield Book
-
-This project includes a comprehensive, 15-chapter documentation series designed to teach you how to build governed agentic AI platforms from the ground up.
-
-| Chapter | Topic | Key Concepts |
-|---|---|---|
-| **[Chapter 1](docs/chapter1.md)** | The Factory Entrance | Project structure and purpose |
-| **[Chapter 4](docs/chapter4.md)** | The Judge’s Bench | Risk engines and policy mapping |
-| **[Chapter 8](docs/chapter8.md)** | The Safety Inspectors | Human-in-the-loop review |
-| **[Chapter 13](docs/chapter13.md)** | The Guard Towers | Real-time security and compliance |
-| **[Chapter 15](docs/chapter15.md)** | The Final Exam | End-to-end verification |
-
-> [!TIP]
-> **[CORE_ENGINE_STUDY_GUIDE.md](CORE_ENGINE_STUDY_GUIDE.md)**: A high-density guide for the 5 most critical files in the platform, using the **4-Question Framework**.
-
 ---
 
 ## 🏛️ Documentation Index
+
+| Doc | What It Covers |
+|---|---|
+| [Architecture](docs/architecture.md) | System design philosophy, layers, tradeoffs |
+| [Workflow](docs/workflow.md) | All 5 execution paths |
+| [Control Plane](docs/control_plane.md) | Governance engine deep dive |
+| [Review Workflow](docs/review_workflow.md) | Human oversight design |
+| [Event System](docs/events.md) | Async pipeline, lifecycle states, production mapping |
+| [Evaluation](docs/evaluation.md) | Quality measurement framework |
+| [Testing](docs/testing.md) | Test strategy and failure coverage |
+| [Interview Walkthrough](docs/interview_walkthrough.md) | Prepared talk track |
+| [Local Deployment](infra/deployment/local.md) | Quick start guide |
+| [Production Deployment](infra/deployment/production.md) | Scaling and production mapping |
 
 ---
 
